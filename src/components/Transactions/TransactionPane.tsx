@@ -1,6 +1,6 @@
-import { useState } from "react"
 import { InputCheckbox } from "../InputCheckbox"
 import { TransactionPaneComponent } from "./types"
+import { useState } from "react"
 
 export const TransactionPane: TransactionPaneComponent = ({
   transaction,

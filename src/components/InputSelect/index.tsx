@@ -1,7 +1,8 @@
-import Downshift from "downshift"
-import { useCallback, useState } from "react"
-import classNames from "classnames"
 import { DropdownPosition, GetDropdownPositionFn, InputSelectOnChange, InputSelectProps } from "./types"
+import { useCallback, useState } from "react"
+
+import Downshift from "downshift"
+import classNames from "classnames"
 
 export function InputSelect<TItem>({
   label,

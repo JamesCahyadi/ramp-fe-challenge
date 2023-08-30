@@ -1,11 +1,12 @@
 import {
+  Employee,
   PaginatedRequestParams,
   PaginatedResponse,
   RequestByEmployeeParams,
   SetTransactionApprovalParams,
   Transaction,
-  Employee,
 } from "./types"
+
 import mockData from "../mock-data.json"
 
 const TRANSACTIONS_PER_PAGE = 5
@@ -56,5 +57,8 @@ export const setTransactionApproval = ({ transactionId, value }: SetTransactionA
     throw new Error("Invalid transaction to approve")
   }
 
+  console.log("before:", transaction)
   transaction.approved = value
+  console.log("after:", transaction)
+
 }
